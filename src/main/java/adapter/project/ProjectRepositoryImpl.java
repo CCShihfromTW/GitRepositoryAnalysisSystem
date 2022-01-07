@@ -19,14 +19,14 @@ public class ProjectRepositoryImpl implements ProjectRepository {
         projects = new ArrayList<>();
         conn = Database.getConnection();
     }
-
+    @Override
     public void createProject(Project project){
         String id = "";
         project.addGitRepository(id);
         updateProject(project);
         project.removeGitRepository(id);
     }
-
+    @Override
     public void updateProject(Project project){
         if(!projects.contains(project)) projects.add(project);
         Project projectInDB = getProjectById(project.getId());
@@ -62,6 +62,7 @@ public class ProjectRepositoryImpl implements ProjectRepository {
         return false;
     }
 
+    @Override
     public Project getProjectById(String id) {
         final String query = "SELECT name, repoid, description, starttime FROM project WHERE id=?";
         Project project;

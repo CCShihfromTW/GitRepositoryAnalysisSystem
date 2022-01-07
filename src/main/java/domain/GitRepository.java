@@ -26,9 +26,9 @@ public class GitRepository {
     public String getRepoName() {
         return repoName;
     }
-
+    void setRepoName(String repoName){this.repoName=repoName;}
     public String getOwnerName() {
         return ownerName;
     }
-
+    void setOwnerName(String ownerName){this.ownerName=ownerName;}
 }

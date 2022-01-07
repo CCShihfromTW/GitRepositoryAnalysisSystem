@@ -19,7 +19,6 @@ public class Account {
     }
 
     public Account(String name, String account, String password) {
-        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.password = password;
         this.account = account;
@@ -28,7 +27,7 @@ public class Account {
     }
 
     public Account(String id, String name, String account, String password) {
-        this.id =id;
+        this.id = id;
         this.name = name;
         this.password = password;
         this.account = account;
@@ -39,26 +38,39 @@ public class Account {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getId() {
         return id;
+    }
+
+    public void SetId(){
+        this.id = UUID.randomUUID().toString();
     }
 
     public String getPassword() {
         return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getAccount() {
         return account;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
-    public void addProject(String id){
+    public void addProject(String id) {
         projects.add(id);
     }
-    public List<String> getProjects(){
+
+    public List<String> getProjects() {
         return this.projects;
     }
 }

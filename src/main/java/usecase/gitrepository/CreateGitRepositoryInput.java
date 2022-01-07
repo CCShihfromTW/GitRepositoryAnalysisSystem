@@ -7,7 +7,4 @@ public interface CreateGitRepositoryInput {
 
     void setRepoName(String repoName);
     String getRepoName();
-
-
-
 }

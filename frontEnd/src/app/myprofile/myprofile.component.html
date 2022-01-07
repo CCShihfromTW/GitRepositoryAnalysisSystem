@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="row" style="padding:10px 100px 10px 100px;">
+  <div class="col-4">
+    <br>
+    <!--    <app-personal-imformation></app-personal-imformation>-->
+  </div>
+  <div class="col-8">
+    <table>
+        <tr>
+          <div class="wrapper">
+              <nav class="left">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"
+                     alt="user" width="100">
+                <h4>{{UserName}}</h4>
+                <input type="button" value="變更姓名" onclick="location.href='https://www.youtube.com/watch?v=51LEkgEXRLg&list=RD51LEkgEXRLg&index=1'">
+              </nav>
+              <nav class="right">
+                <div class="info">
+                  <h3>My Profile</h3>
+                  <div class="info_data">
+                    <div class="data">
+                      <h4>Account</h4>
+                      <p>arthur@gmail.com</p>
+                    </div>
+                    <input type="button" value="變更密碼" (click)="NavitoResetPassword()">
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </tr>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+

@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+.gradle
+build
+GRAS環境需求.docx
