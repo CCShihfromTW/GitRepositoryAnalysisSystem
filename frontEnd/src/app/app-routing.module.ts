@@ -16,11 +16,13 @@ import {IssueTrackComponent} from './issue-track/issue-track.component';
 import {HomepageComponent} from './homepage/homepage.component';
 import {ProjectoverviewComponent} from './projectoverview/projectoverview.component';
 import {ComparemultiprojectComponent} from './comparemultiproject/comparemultiproject.component';
+import {MyprofileComponent} from './myprofile/myprofile.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 const routes: Routes = [
-  {path: 'homepage', component: HomepageComponent},
   {path: '', component: HomepageComponent},
+  {path: 'homepage', component: HomepageComponent},
   {path: 'LoginPage', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'admin', component: AdminComponent},
@@ -36,9 +38,9 @@ const routes: Routes = [
   {path: 'issue-track', component: IssueTrackComponent},
   {path: 'projectoverview', component: ProjectoverviewComponent},
   {path: 'multiproject', component: ComparemultiprojectComponent},
-  {path: '**', component: LoginComponent}
-
-
+  {path: 'myprofile', component: MyprofileComponent},
+  {path: 'reset-password', component: ResetPasswordComponent},
+  {path: '**', component: LoginComponent},
 ];
 
 @NgModule({

@@ -15,7 +15,6 @@ import {AddRepoComponent} from './add-repo/add-repo.component';
 import {AddProjectComponent} from './add-project/add-project.component';
 import {AddRepoFromGithubComponent} from './add-repo-from-github/add-repo-from-github.component';
 import {AddProjectFromGithubComponent} from './add-project-from-github/add-project-from-github.component';
-import {PersonalImformationComponent} from './personal-imformation/personal-imformation.component';
 import {RepoImformationComponent} from './repo-imformation/repo-imformation.component';
 import {SignupComponent} from './signup/signup.component';
 import {HeaderComponent} from './header/header.component';
@@ -34,6 +33,8 @@ import { ComparemultiprojectComponent } from './comparemultiproject/comparemulti
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSelectModule} from '@angular/material/select';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 
 
@@ -54,7 +55,7 @@ import {MatSelectModule} from '@angular/material/select';
     AddProjectComponent,
     AddRepoFromGithubComponent,
     AddProjectFromGithubComponent,
-    PersonalImformationComponent,
+    // PersonalImformationComponent,
     RepoImformationComponent,
     SignupComponent,
     HeaderComponent,
@@ -62,6 +63,8 @@ import {MatSelectModule} from '@angular/material/select';
     ProjectoverviewComponent,
     FooterComponent,
     ComparemultiprojectComponent,
+    MyprofileComponent,
+    ResetPasswordComponent,
 
 
   ],

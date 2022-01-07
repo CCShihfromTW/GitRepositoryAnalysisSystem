@@ -10,7 +10,7 @@ public class Database {
     public static Connection getConnection() {
         try {
             new Driver();
-            return DriverManager.getConnection("jdbc:mysql:///gras?user=yours&password=yours&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/gras?user=root&password=db_user_00&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
         } catch (SQLException e) {
             System.out.println("SQLException: " + e.getMessage());
             System.out.println("SQLState: " + e.getSQLState());

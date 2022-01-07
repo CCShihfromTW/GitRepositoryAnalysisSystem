@@ -133,7 +133,7 @@ public class GithubRepositoryTest {
     public void RepoInformationTest() throws IOException {
         JSONObject returnJson = new JSONObject();
 
-        String requestRepo = "r1";
+        String requestRepo = "6b376ef6-76ee-4ca6-89ff-1ec7b1c2bfb5";
         GitRepositoryRepository gitRepositoryRepository = new GitRepositoryRepositoryImpl();
         GitRepository gitRepository = gitRepositoryRepository.getGitRepositoryById(requestRepo);
         gitRepository.getOwnerName();
